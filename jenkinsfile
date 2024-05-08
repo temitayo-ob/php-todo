@@ -19,7 +19,7 @@ pipeline{
 
         stage('Checkout Git') {
             steps {
-                git branch: 'main', credentialsId: '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', url: 'https://github.com/temitayo-ob/php-todo.git'
+                git branch: 'main', credentialsId: '0f7f5537-7c34-4760-96ba-eee9e1df347f', url: 'https://github.com/temitayo-ob/php-todo.git'
             }
         }
 
@@ -45,7 +45,7 @@ pipeline{
             steps {
                 script {
                     sh "sleep 60"
-                    sh "curl -I 54.157.187.189:9090"
+                    sh "curl -I 35.153.33.120:9090"
                 }
             }
         }
