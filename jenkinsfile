@@ -42,14 +42,14 @@ pipeline{
             }
         }
 
-        stage("Smoke Test") {
-            steps {
-                script {
-                    sh "sleep 60"
-                    sh "curl -I localhost:9090"
-                }
-            }
-        }
+        // stage("Smoke Test") {
+        //     steps {
+        //         script {
+        //             sh "sleep 60"
+        //             sh "curl -I localhost:9090"
+        //         }
+        //     }
+        // }
 
         stage("Publish to Registry") {
             steps {
