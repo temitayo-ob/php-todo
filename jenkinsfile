@@ -46,7 +46,7 @@ pipeline{
             steps {
                 script {
                     sh "sleep 60"
-                    sh "curl -I 52.91.184.7:9090"
+                    sh "curl -I localhost:9090"
                 }
             }
         }
