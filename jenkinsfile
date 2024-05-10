@@ -29,6 +29,7 @@ pipeline{
                 script {
                     
                     sh " docker login -u temitayo86 -p ${DOCKERHUB_CREDENTIALS}"
+                    sh " newgrp docker"
                     sh " docker build -t temitayo86/php-todo:${env.TAG} ."
                 }
             }
